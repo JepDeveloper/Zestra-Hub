@@ -4249,7 +4249,7 @@ function StartUnfunctionals()
 	Domain.VersionText2.Text = "- "..ReleaseFeature
 	Domain.ToggleButton.Rotation = 90
 	Domain.ToggleButton.ImageTransparency = 1
-	Domain.Other.Watermark.Text.Text = "Domain "..ReleaseType.." v"..tostring(Release)
+	Domain.Other.Watermark.Text.Text = "Fear hub "..ReleaseType.." v"..tostring(Release)
 	Domain.link.Text = DiscordLink
 	Domain.Link.Text = DiscordLink
 	Domain.Playerlist.Template.Visible = false
