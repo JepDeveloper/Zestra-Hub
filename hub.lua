@@ -5124,7 +5124,7 @@ function PromptExploit(Exploit)
 			
 				Domain.Other.ExploitFound:TweenPosition(UDim2.new(-26.5,0,0.299,0),"In","Quint",0.4)
 				pexploit = false
-				Notify("Loading "..Exploit.Name..", this may bug for a few seconds in some cases","GothamSemibold",Color3.fromRGB(0, 95, 139))
+				Notify("Loading "..Exploit.Name..", this may bug for a few seconds, please give us a while.","GothamSemibold",Color3.fromRGB(0, 95, 139))
 			Execute(Exploit.Loadstring)
 			end
 		end)
@@ -5238,10 +5238,10 @@ function BootDomain()
 			end
 		else
 			if theme and themedata then
-				Notify("We found theme data but couldn't load it as you aren't a Premium member","GothamSemibold",Color3.fromRGB(229, 146, 12))
+				Notify("We found theme data but couldn't load it as you aren't a Premium member.","GothamSemibold",Color3.fromRGB(229, 146, 12))
 			end
 			if startupsound then
-				Notify("We found startupsound data but couldn't load it as you aren't a Premium member","GothamSemibold",Color3.fromRGB(229, 146, 12))
+				Notify("We found startupsound data but couldn't load it as you aren't a Premium member.","GothamSemibold",Color3.fromRGB(229, 146, 12))
 			end
 			Notify(" Welcome, "..Player.DisplayName.." ","GothamSemibold",Color3.fromRGB(54, 54, 54))
 		end
@@ -5250,9 +5250,9 @@ function BootDomain()
 		if antiexploit.PlaceId == game.PlaceId then
 			for _, anti in ipairs(antiexploit.Locations) do
 				if #antiexploit.Locations > 1 then
-					Notify("Removed multiple anti cheats ("..tostring(#antiexploit.Locations)..")","GothamSemibold",Color3.fromRGB(0, 85, 127))
+					Notify("Removed multiple anti cheats. ("..tostring(#antiexploit.Locations)..")","GothamSemibold",Color3.fromRGB(0, 85, 127))
 				else
-					Notify(" Removed 1 anti cheat ","GothamBold",Color3.fromRGB(0, 85, 127))
+					Notify(" Removed 1 anti cheat. ","GothamBold",Color3.fromRGB(0, 85, 127))
 				end
 			end
 		end
